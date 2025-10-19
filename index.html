@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidas Rápidas El Sabor Casero</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #e74c3c;
+        }
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #e74c3c;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 5px;
+        }
+        p { line-height: 1.6; }
+        ul, ol { margin-left: 30px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #e74c3c;
+            color: white;
+        }
+        form {
+            background-color: #fef2ec;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        input, textarea, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover { background-color: #c0392b; }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        video {
+            display: block;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🍔 Comidas Rápidas 🍟</h1>
+        <p>Un emprendimiento familiar dedicado a ofrecer hamburguesas, perros calientes, salchipapas y más.</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#tabla">Precios</a>
+        <a href="#formulario">Pedidos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio">
+        <h2>Bienvenidos</h2>
+        <p>
+            En <strong>El Sabor Casero</strong> te ofrecemos una gran variedad de comidas rápidas 
+            preparadas con los mejores ingredientes. <em>Hamburguesas, perros calientes, papas fritas</em> 
+            y mucho más. Nuestro compromiso es brindarte un servicio de calidad y un sabor que te encantará.
+        </p>
+    </section>
+
+    <section id="menu">
+        <h2>🍽️ Nuestro Menú</h2>
+        <ul>
+            <li>Hamburguesa Clásica</li>
+            <li>Perro Caliente Especial</li>
+            <li>Salchipapas Mixtas</li>
+            <li>Arepas Rellenas</li>
+            <li>Jugos Naturales</li>
+        </ul>
+        <h3>Bebidas Disponibles:</h3>
+        <ol>
+            <li>Gaseosa</li>
+            <li>Agua</li>
+            <li>Limonada</li>
+        </ol>
+    </section>
+
+    <section id="galeria">
+        <h2>📸 Video Promocional</h2>
+        <div style="text-align:center;">
+            <video width="720" controls>
+                <source src="Video.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+    </section>
+
+    <section id="tabla">
+        <h2>💰 Lista de Precios</h2>
+        <table>
+            <tr><th>Producto</th><th>Precio</th><th>Promoción</th></tr>
+            <tr><td>Hamburguesa Clásica</td><td>$12.000</td><td>Combo con bebida $15.000</td></tr>
+            <tr><td>Perro Caliente Especial</td><td>$10.000</td><td>2x1 los viernes</td></tr>
+            <tr><td>Salchipapas Mixtas</td><td>$13.000</td><td>Incluye salsa de la casa</td></tr>
+        </table>
+    </section>
+
+    <section id="formulario">
+        <h2>📝 Realiza tu Pedido</h2>
+        <form>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com">
+
+            <label for="producto">Selecciona tu pedido:</label>
+            <select id="producto" name="producto">
+                <option value="hamburguesa">Hamburguesa Clásica</option>
+                <option value="perro">Perro Caliente Especial</option>
+                <option value="salchipapas">Salchipapas Mixtas</option>
+            </select>
+
+            <label for="comentarios">Comentarios o instrucciones:</label>
+            <textarea id="comentarios" rows="4" placeholder="Ej: sin cebolla, extra queso..."></textarea>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <footer id="contacto">
+        <p>📍 Barrio Juan Pablo ll, Paimadó - Rio Quito | 📞 3135701491</p>
+        <p>© 2025 El Sabor Casero - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
